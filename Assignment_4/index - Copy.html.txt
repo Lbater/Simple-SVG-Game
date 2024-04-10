@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <!-- Author: Logan Bateman, 000918989 -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>index</title>
+			<!-- Scripts -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+			<script src="indexJS.js" defer></script>            
+        </head>
+        <body class="container-lg container-md container-sm bg-dark">
+			
+			<header class="border text-center text-bg-info h1 border-5 border-success">
+				Game!!!
+                <div id="instructions"></div>
+                <div id="secret"></div>
+			</header>
+
+            <div id="myBar" class="rounded bg-white mb-2 text-center text-danger fs-2 col-6"></div>
+
+            <svg height="500" width="100%" class="border border-5 border-primary bg-warning rounded" id="playField">
+                <rect x="50" y="50" height="80px" width="80px" stroke="black" fill="red" stroke-width="2" id="player"></rect>
+            </svg>
+
+            <input type="text" class="mt-2 col-12 text-center" placeholder="How many circles can you dodge?" id="circles">
+            
+            <div id="score" class="rounded bg-white mt-2 mb-2 text-center text-success fs-3 col-12"></div>
+
+            <div class="row mx-auto mt-2">
+                <button class="col-3 bg-info" onclick="moveLeft()">Move Left</button>
+                <button class="col-3 bg-info-subtle" onclick="moveRight()">Move right</button>
+                <button class="col-3 bg-success" onclick="timer()">Start</button>
+                <button class="col-3 bg-danger" onclick="refresh()">Refresh</button>
+            </div>
+            
+			
+			<footer class="border text-center bg-primary-subtle h4 border-5 border-danger mt-2">
+				&#169; 2024, Logan Bateman-000918989, Mohawk College
+			</footer>
+        
+		</body>
+    </html>
